@@ -1,0 +1,28 @@
+
+p, ul {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+div {
+	margin-bottom: 60px;
+}
+h1 {
+	text-align: center;
+}
+img {
+	margin: auto;
+	display: block;
+}
+figure > p {
+	font-size: 11px;
+}
+#back {
+	text-align: right;
+}
+#menu:link, #menu:visited {
+	text-decoration: none;
+	color: hotpink;
+}
+#menu:hover {
+	color: indigo;
+}

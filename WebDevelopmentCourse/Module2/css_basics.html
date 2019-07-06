@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cascading Style Sheets Basics</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/css_basics.css">
+</head>
+<body>
+	
+	<p id="back"><a href="menu.html" id="menu">Back to menu</a></p>
+
+	<h1>Cascading Style Sheets Basics</h1>
+	
+	<div>
+		<h2>Power of CSS</h2>
+			<p>CSS provides styling capability.</p>
+			<p>It creates an user experience that matters.</p>
+	</div>
+
+
+	<div>
+		<h2>Anatomy of a CSS Rule</h2>
+		<p>We have a selector followed by curly braces</p>
+		<figure>
+			<img src="images/selector.png" alt="a selector">
+		</figure>
+		<p>Inside it we have declarations that consist of a property and a value</p>
+		<figure>
+			<img src="images/declaration.png">
+			<p>Little paragraph</p>
+		</figure>
+		<p class="grey">The browser comes with default styles for things.</p>
+
+	</div>
+
+
+	<div>
+		<h2>Element, Class and ID Selectors</h2>
+
+		<p class="highlight">An element selector applies to thing like p, h1, div, etc.</p>
+		<p class="grey">A class selector is specified by a .classname it will target every element with that class</p>
+		<p class="italic" id="mono">An id selector is specified by a #idname it will target the element with that id</p>
+	</div>
+
+
+	<div class="highlight">
+		<h2>Combining Selectors</h2>
+	
+		<p>We can combine element selectors with class selectors:  p.classname</p>
+		<p class="bold italic">We can also do a child selector:  article > p will target all p elements that are direct childs of an article element</p>
+		<p class="bold">Descendant selector:  article p will target all p elements that are inside an article element at any level.</p>
+		<p>The child and the descendant selectors also work with classes not only with elements.</p>
+	</div>
+
+	<div>
+		<h2>Pseudo-Class Selectors</h2>
+
+		<p>This is for specific properties</p>
+		<p>We put the selector followed by the pseudo-class selector:  p:hover</p>
+		<p>We can use selectors such as:</p>
+		<ul>
+			<li>:link</li>
+			<li>:visited</li>
+			<li class="special">:hover</li>
+			<li>:active</li>
+			<li>:nth-child()</li>
+		</ul>
+		<p>This can be used along with anything.</p>
+	</div>
+
+
+
+</body>
+</html>

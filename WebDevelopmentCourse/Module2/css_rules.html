@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Rules Cnflict Resolution and Text Styling</title>
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Graduate&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/css_rules.css">
+</head>
+<body>
+	
+	<p id="back"><a href="menu.html" id="menu">Back to menu</a></p>
+
+	<h1>CSS Rules Conflict Resolution and Text Styling</h1>
+
+	<div>
+		<h2>Style Placement</h2>
+		<p>Choosing where to place the styles affects how reusable they are and which style declarations override other ones.</p>
+		<p>You can put styles in:</p>
+		<ul>
+			<li>The head section of the HTML file inside the tag style. </li>
+			<li>Directly on the element in the HTML file: element style="properties"</li>
+			<li>Specifing the styles in a separate css stylesheet and linking it at the head section in the HTML file.</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2>Conflict Resolution</h2>
+		<h3>Origin</h3>
+		<p>When we have two declarations in conflict, origin precedence rules kick in as follows: the last declaration wins. Top to bottom within the style and also in the links.</p>
+		<p>When the declarations are not in conflict, they will merge.</p>
+		<h3>Inheritance</h3>
+		<p>If you specify a property for an element, all the children, grandchildren, etc of the element will inherit those properties.</p>
+		<figure>
+			<img src="images/inheritance.png" alt="">
+		</figure>
+		<h3>Specificity</h3>
+		<p>Most specific selector combination wins. The specificity goes like this:</p>
+		<ul>
+			<li>Style attribute in an element on the HTML file</li>
+			<li>id tag</li>
+			<li>class, pseudo-class, attribute</li>
+			<li>Element names</li>
+		</ul>
+		<p>We can calculate specificity like a score using these four things.</p>
+	</div>
+	<div>
+		<h2>Styling Text</h2>
+		<p>Specify font family – font-family: 'font', defaults;</p>
+		<p>Color of text – color : value;</p>
+		<p>For italic or normal – font-style: value;</p>
+		<p>For text bold – font-weight: value(word or number);</p>
+		<p>Size of text – font-size: value;</p>
+		<p>We can change from lower to upper cas – text-transform: uppercase, lowercase or capitalized;</p>
+		<p>Position the text – text-align: value;</p>
+	</div>
+
+</body>
+</html>

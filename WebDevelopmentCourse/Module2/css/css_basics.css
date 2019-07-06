@@ -1,0 +1,29 @@
+
+h1 {
+	font-family: serif;
+	color: darkorange;
+}
+h2 {
+	font-family: 'Quicksand', sans-serif;
+}
+.grey {
+	color: grey;
+}
+.italic {
+	font-style: italic;
+}
+#mono {
+	font-family: monospace;
+}
+.highlight {
+	background-color: yellow;
+}
+p.highlight {
+	font-size: 12px;
+}
+.bold {
+	font-weight: bold;
+}
+.special:hover {
+	color: hotpink;
+}

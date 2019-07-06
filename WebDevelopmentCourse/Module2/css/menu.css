@@ -1,0 +1,23 @@
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+header {
+	background-color: indigo;
+	margin: 0px;
+}
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 48px;
+	padding: 10px;
+	color: white;
+}
+div.page {
+	display: block;
+	background-color: lavender;
+	border: 2px solid indigo;
+	height: 120px;
+	width: 300px;
+	margin-left: 15px;
+	text-align: center;
+}
