@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Box Model and Layout</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/box_model.css">
+</head>
+<body>
+	
+	<p id="back"><a href="menu.html" id="menu">Back to menu</a></p>
+
+	<h1>The Box Model and Layout</h1>
+
+	<div>
+		<h2>The Box Model</h2>
+		<p>In HTML every element is considered a box and has certain elements shown in this diagram.</p>
+		<figure>
+			<img src="images/boxmodel.png" alt="">
+		</figure>
+		<h3>Definitions</h3>
+		<ul>
+			<li>The content is whatever is inside the element. If we have a div with words in it, the content would be all the space the words took. Height and width properties affect this part of the element.(orange</li>
+			<li>The padding is the space between the content and the border, it is a part of the element itself. For example if we have a div with a height of 50px and we add 10px of padding to the top and bottom, the div would occupy a total of 70px. (salmon)</li>
+			<li>The border is the outmost layer of the box. It is a part of the element itself and, like the padding, affects sizing. (black)</li>
+			<li>The margin is the space between the element and any other element. It does not affect the size of the element and it's not part of it. (white) More later.</li>
+			<li>We can resize the padding and the margins like so – margin/padding: (top)0 (right)0 (bottom)0 (left)0;</li>
+			<li>The border is set like so – border: (weight)0px (style)solid (color)black</li>
+		</ul>
+		<div id="box">
+			<div id="content">This is the content</div>
+		</div>
+
+
+		<h3>Sizing a box</h3>
+		<p>Every HTML element has a property called box-sizing and by default it is set to content. We can change this to avoid sizing problems when it comes to padding and borders. In order to include these two properties in our sizing we can set the box-sizing to border-box in CSS.</p>
+		<p>Unfortunately, box-sizing is not inheritable like other selectors. But we can use the "*" selector that says that those properties should be applied to everything, it's not inherited.</p>
+
+
+		<h3>Margins</h3>
+		<ul>
+			<li>They are horizontally comulative.</li>
+			<li>However, margins vertically collapse. The larger margin will win.</li>
+			<li>To override default browser margins, we can put the commands in the "*" selector.</li>
+		</ul>
+
+
+		<h3>Constraining size</h3>
+		<p>When we constrain an element to a certain size, content might overflow and we have a way to solve it. We use the command overflow: value; And we have some options:</p>
+		<ul>
+			<li>visible – the overflowing content will be visible.</li>
+			<li>hidden – it clips the content where the element ends</li>
+			<li>auto – adds a scroller</li>
+			<li>scroll – adds a scroller on both sides even if they're not used.</li>
+		</ul>
+	</div>
+
+
+
+	<div>
+		<h2>The background Property</h2>
+		<p>Backgrounds have various properties such as:</p>
+		<ul>
+			<li>background-color: (color) – sets a color for the background</li>
+			<li>background-image: url("file") – sets an image as the background. It wins in priority vs the color</li>
+			<li>background-repeat: (repeat, no-repeat, repeat-x, repeat-y) – it tells how many times to repeat the background image over the element.</li>
+			<li>background-position: (vertical) (horizontal) – where the background image will be positioned.</li>
+			<li>background: (image) (repeat) (position) (color) – sets all the properties at once. It overrides other background properties.</li>
+		</ul>
+	</div>
+
+
+	<div>
+		<h2>Positioning elements by floating</h2>
+
+		<p>When you float elements, you take them out of the document flow. When it comes to floated elements, the margins never collapse. Floating is alternative to the normal document flow</p>
+		<p>Floated elements are positioned at the left or right edge of their containing element.</p>
+		<p>To reset floating use the clear property.</p>
+		<p>See code of menu page for seeing how it can be used.</p>
+	</div>
+
+	<div>
+		<h2>Relative and Absolute Element Positing</h2>
+		<ul>
+			<li>Static Positioning – the normal document flow.</li>
+			<li>Relative Positioning – element is positioned relative to their normal position in the document flow. The positioning CSS (offset) properties are: top, bottom, left, right. The element is NOT taken out of normal document flow. If it's offset visiually, its original place is preserved.</li>
+			<li>Absolute positioning – all offsets are relative to the position of the nearest ancestor which has positioning set on it, other than static. By default, html is the only element that has non-static positioning set on it (relative). The element is taken out of the normal document flow</li>
+		</ul>
+		<p>To position elements we start with { position: value; } and then we can write the offsets as { top: value; }</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction to Twitter Bootstrap</title>
+	<link rel="stylesheet" href="css/Twitter_Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/twitter_bootstrap.css">
+</head>
+<body>
+
+	<p id="back"><a href="menu.html" id="menu">Back to menu</a></p>
+	
+	<h1>Introduction to Twitter Bootstrap</h1>
+	
+	<div>
+		<h2>Setup</h2>
+		<ul>
+			<li>Download Bootstrap file from webpage</li>
+			<li>Download jquery</li>
+			<li>Save the file on Documents</li>
+			<li>Duplicate the needed files and include them in your project file</li>
+			<li>Link them to your project</li>
+			<li>For CSS use bootstrap.min.css</li>
+			<li>To use the JS files you need to include jquery</li>
+			<li>Link jquery first and then bootstrap.min.js</li>
+			<li>( js is linked using script )</li>
+		</ul>
+	</div>
+
+	<div>
+		<h2>The Bottstrap Grid System</h2>
+		<p>Based on the 12-grid system. Setup:</p>
+		<ul>
+			<li>Grids should be inside a "container" that is a div with class container. The class "container" has predetermined fixed responsive widths. The class "container-fluid" covers the full width of the browser and provides consistent padding around the content.</li>
+			<li>After the container we put a div with class "row" and this creates a horizontal group. To add another row we should use this div again. It has negative margin to counteract container padding so things line up.</li>
+		</ul>
+		<figure>
+			<img src="images/bootstrap_grid.png" alt="">
+		</figure>
+		<ul>
+			<li>After the row we put the columns. These should have a determined class based on the 12-grid system. Every class is defined using this template:</li>
+			<li>xs classes never collapse</li>
+		</ul>
+		<figure>
+			<img src="images/columns.png" alt="">
+		</figure>
+		<p>Let's look at an example:</p>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">Column 1</div>
+				<div class="col-lg-3 col-md-6">Column 2</div>
+				<div class="col-lg-3 col-md-6">Column 3</div>
+				<div class="col-lg-3 col-md-6">Column 4</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6">Column 1</div>
+				<div class="col-lg-3 col-md-6">Column 2</div>
+				<div class="col-lg-3 col-md-6">Column 3</div>
+				<div class="col-lg-3 col-md-6">Column 4</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

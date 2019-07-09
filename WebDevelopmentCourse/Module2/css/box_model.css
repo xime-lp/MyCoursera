@@ -1,0 +1,16 @@
+h1 {
+	font-family: 'Bungee', cursive;
+}
+#box {
+	background-color: salmon;
+	padding: 5px;
+	border: 2px solid black;
+	margin: 10px;
+	box-sizing: border-box;
+	width: 200px;
+	text-align: center;
+}
+#content {
+	background-color: yellow;
+	margin: 0;
+}

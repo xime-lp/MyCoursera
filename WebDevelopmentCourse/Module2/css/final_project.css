@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin: 50px 0px;
+	font-size: 175%;
+}
+.square {
+	margin-bottom: 10px;
+	background-color: gainsboro;
+	border: 1px solid black;
+	float: left;
+	padding: 10px;
+	border-radius: 10px;
+}
+.title {
+	/*float: right;*/
+	text-align: center;
+	background-color: indigo;
+	color: white;
+	width: 130px;
+	float: right;
+	margin: -10px;
+	font-size: 125%;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-top-right-radius: 10px;
+}
+
+p {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 7px;
+	margin-top: 25px;
+	text-align: justify;
+}
+#t1 {
+	background-color: maroon;
+}
+#t2 {
+	background-color: salmon;
+}
+#t3 {
+	background-color: coral;
+}
+
+/****** LARGE DEVICES ******/
+@media (min-width: 992px){
+	.lg-4 {
+		width: 32%;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	#s1 {
+		border-bottom-right-radius: 0px;
+		border-top-right-radius: 0px;
+	}
+	#t1, #t2, #s2 {
+		border-radius: 0;
+	}
+	#s3 {
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+	}
+}
+
+/****** MEDIUM DEVICES ******/
+@media (min-width: 768px) and (max-width: 991px){
+	.md-6 {
+		width: 48.5%;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.md-12 {
+		width: 98%;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	#s1, #s2 {
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	#s1, #s3, #t3, #t1 {
+		border-top-right-radius: 0;
+	}
+	#s2, #s3 {
+		border-top-left-radius: 0;
+	}
+}
+
+/****** SMALL DEVICES ******/
+@media (max-width: 767px){
+	#t2, #s2 {
+		border-radius: 0;
+	}
+	#s1 {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	#s3, #t3 {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+}
